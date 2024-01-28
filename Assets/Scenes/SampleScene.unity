@@ -478,19 +478,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b1aefb9ac2b9b747a0d2b09c778b05d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  walkSpeed: 7
+  sprintSpeed: 10
   groundDrag: 5
   jumpForce: 12
   jumpCooldown: 0.25
   airMultiplier: 0.4
-  walkSpeed: 0
-  sprintSpeed: 0
+  crouchSpeed: 3.5
+  crouchYScale: 0.5
+  maxSlopeAngle: 40
   jumpKey: 32
+  sprintKey: 304
+  crouchKey: 306
   playerHeight: 2
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
   orientation: {fileID: 1186925788}
+  state: 0
 --- !u!54 &1010631366
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -630,8 +635,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2cd4f22417130547acb57720d49b552, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensX: 400
-  sensY: 400
+  sensX: 60
+  sensY: 60
   orientation: {fileID: 1186925788}
 --- !u!81 &1413152818
 AudioListener:
